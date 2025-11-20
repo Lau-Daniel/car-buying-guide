@@ -59,8 +59,7 @@ car-buying-guide/
 
 ### 1. 克隆项目
 ```bash
-git clone https://github.com/yourusername/car-buying-guide.git
-# 替换 yourusername 为你的 GitHub 用户名
+git clone https://github.com/Lau-Daniel/car-buying-guide.git
 ```
 
 ### 2. 安装依赖
@@ -114,13 +113,12 @@ python app.py
 
 ## 联系方式
 
-- 项目地址：https://github.com/yourusername/car-buying-guide
-- 问题反馈：https://github.com/yourusername/car-buying-guide/issues
-- 讨论区：https://github.com/yourusername/car-buying-guide/discussions
+- 项目地址：https://github.com/Lau-Daniel/car-buying-guide
+- 问题反馈：https://github.com/Lau-Daniel/car-buying-guide/issues
+- 讨论区：https://github.com/Lau-Daniel/car-buying-guide/discussions
 
 ## 最后说明
 
-1. 请将所有 `yourusername` 替换为您的实际 GitHub 用户名
-2. 根据项目实际情况修改或补充功能说明
-3. 定期更新文档以保持内容的准确性
-4. 欢迎提交 Issue 和 Pull Request 帮助改进项目
+1. 根据项目实际情况修改或补充功能说明
+2. 定期更新文档以保持内容的准确性
+3. 欢迎提交 Issue 和 Pull Request 帮助改进项目
