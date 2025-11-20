@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>沃尔沃XC60购车指南：写给完全不懂车的你</title>
+    <title>Car Buying Guide - 汽车购买指南</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
@@ -14,7 +14,7 @@
             background-color: #f5f7fa;
         }
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 2rem auto;
             background-color: #fff;
             padding: 2rem 3rem;
@@ -87,14 +87,112 @@
             margin: 2rem 0;
             border-color: #e9ecef;
         }
+        .feature-card {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        .feature-card h4 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        .feature-card p {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>沃尔沃XC60购车指南：写给完全不懂车的你</h1>
-        <p class="lead">这是一份专为第一次买车、完全不懂车的朋友准备的沃尔沃XC60购车手册。我会用最直白的语言，跳过所有复杂术语，只讲你真正需要知道的东西。</p>
+        <h1>🚗 Car Buying Guide - 汽车购买指南</h1>
+        <p class="lead">一个帮助你轻松选购汽车的开源项目，提供全面、客观、实用的汽车购买信息和决策支持。</p>
 
-        <h2>1. 先搞懂：沃尔沃XC60是什么车？</h2>
+        <h2>🎯 核心功能</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="feature-card">
+                    <h4>📊 智能车型推荐</h4>
+                    <p>根据预算、用途、偏好等条件推荐最适合的车型，支持个性化筛选（品牌、排量、油耗、空间等）。</p>
+                    <a href="#recommendation">了解更多 →</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="feature-card">
+                    <h4>🔍 参数对比</h4>
+                    <p>直观对比不同车型的核心参数，支持自定义对比维度，生成详细的对比报告。</p>
+                    <a href="#comparison">了解更多 →</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="feature-card">
+                    <h4>💡 购车指南</h4>
+                    <p>全面的购车流程讲解，实用的砍价技巧，保险和贷款知识普及。</p>
+                    <a href="#guide">了解更多 →</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="feature-card">
+                    <h4>📈 市场动态</h4>
+                    <p>最新汽车降价信息，热门车型排行榜，新能源汽车发展趋势。</p>
+                    <a href="#market">了解更多 →</a>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="recommendation">📊 智能车型推荐</h2>
+        <p>我们的智能推荐系统会根据您的需求，为您推荐最适合的车型：</p>
+        <ul>
+            <li>✅ 预算范围</li>
+            <li>✅ 用车用途（家用/商用/越野等）</li>
+            <li>✅ 偏好品牌</li>
+            <li>✅ 动力类型（汽油/柴油/新能源等）</li>
+            <li>✅ 空间需求</li>
+        </ul>
+        <div class="tip">
+            💡 <strong>小贴士</strong>：点击 <a href="src/recommendation/recommend.py" download>这里</a> 下载智能推荐工具，或直接使用 <a href="#webapp">网页版应用</a>。
+        </div>
+
+        <h2 id="comparison">🔍 参数对比</h2>
+        <p>我们支持多车型参数对比，涵盖以下核心维度：</p>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>对比维度</th>
+                    <th>说明</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>基本参数</strong></td>
+                    <td>车身尺寸、轴距、座位数等</td>
+                </tr>
+                <tr>
+                    <td><strong>动力系统</strong></td>
+                    <td>发动机功率、扭矩、油耗等</td>
+                </tr>
+                <tr>
+                    <td><strong>安全配置</strong></td>
+                    <td>气囊数量、主动安全系统等</td>
+                </tr>
+                <tr>
+                    <td><strong>科技配置</strong></td>
+                    <td>中控屏幕、驾驶辅助系统等</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="tip">
+            💡 <strong>小贴士</strong>：点击 <a href="src/comparison/compare.py" download>这里</a> 下载参数对比工具。
+        </div>
+
+        <h2 id="guide">💡 购车指南</h2>
+        <h3>沃尔沃XC60购车指南</h3>
+        <p>这是一份专为第一次买车、完全不懂车的朋友准备的沃尔沃XC60购车手册。</p>
+
+        <h4>1. 沃尔沃XC60是什么车？</h4>
         <p>简单说，沃尔沃XC60是一款<em>豪华紧凑型SUV</em>：</p>
         <ul>
             <li>✅ <strong>大小合适</strong>：比小轿车大一点，比公交车/大货车小很多，好开、好停</li>
@@ -102,174 +200,119 @@
             <li>✅ <strong>安全出名</strong>：沃尔沃的“安全”不是噱头，是真的做了很多技术投入</li>
             <li>✅ <strong>豪华但不浮夸</strong>：内饰简洁舒服，没有花里胡哨的设计</li>
         </ul>
-        <p>适合谁？</p>
-        <ul>
-            <li>第一次买车想选“靠谱品牌”的人</li>
-            <li>有家庭需求（带娃、带老人）的人</li>
-            <li>看重安全和舒适超过“面子”的人</li>
-        </ul>
 
-        <h2>2. 必须懂的4个关键术语（用大白话解释）</h2>
-        <p>买车时销售会说很多术语，别慌，先记住这4个最核心的（括号里是中文常用说法）：</p>
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>术语</th>
-                    <th>大白话解释</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>trim（配置等级）</strong></td>
-                    <td>就像手机的“基础版/Pro版/Max版”，不同配置包含不同功能</td>
-                </tr>
-                <tr>
-                    <td><strong>powertrain（动力组合）</strong></td>
-                    <td>车的“心脏+电池”组合，决定了用什么燃料、能跑多少路</td>
-                </tr>
-                <tr>
-                    <td><strong>主动安全</strong></td>
-                    <td>能<strong>预防</strong>事故的功能（比如自动刹车）</td>
-                </tr>
-                <tr>
-                    <td><strong>被动安全</strong></td>
-                    <td>能<strong>减少事故伤害</strong>的功能（比如气囊、高强度车身）</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <h2>3. 选什么配置？看这2个核心决策</h2>
-        <p>买车最纠结的就是“选哪款”，其实只要搞清楚<strong>配置等级</strong>和<strong>动力组合</strong>，就能快速锁定目标。</p>
-
-        <h3>3.1 选配置等级：3款最常见</h3>
-        <p>沃尔沃XC60主要分3个配置等级，直接看表格选：</p>
+        <h4>2. 选什么配置？</h4>
+        <p>沃尔沃XC60主要分3个配置等级：</p>
         <table class="table table-bordered">
             <thead>
                 <tr>
                     <th>配置等级</th>
                     <th>核心功能</th>
                     <th>适合人群</th>
-                    <th>大概价格范围</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td><strong>Core（智行）</strong></td>
-                    <td>基础豪华配置+全部标准安全功能（自动刹车、车道保持）</td>
+                    <td>基础豪华配置+全部标准安全功能</td>
                     <td>预算有限、只想要“安全+基础豪华”的人</td>
-                    <td>39-42万</td>
                 </tr>
                 <tr>
                     <td><strong>Plus（智远）</strong></td>
-                    <td>Core基础上增加：全景天窗、更好的音响、电动尾门、12.3英寸全液晶仪表</td>
+                    <td>Core基础上增加全景天窗、更好的音响、电动尾门等</td>
                     <td>想要“比基础版舒服一点”的人</td>
-                    <td>43-46万</td>
                 </tr>
                 <tr>
                     <td><strong>Ultimate（智雅）</strong></td>
-                    <td>Plus基础上增加：360°全景影像、真皮座椅、座椅通风/加热、自动泊车</td>
+                    <td>Plus基础上增加360°全景影像、真皮座椅等</td>
                     <td>想要“顶配享受”、不差钱的人</td>
-                    <td>47-51万</td>
                 </tr>
             </tbody>
         </table>
-        <div class="tip">
-            💡 <strong>小贴士</strong>：如果预算有限，选Core就够；如果偶尔需要载朋友或家人，选Plus的全景天窗会更舒服。
-        </div>
-        <div class="warning">
-            ⚠️ 以上价格为<strong>汽油动力车型</strong>的大概范围，插混/纯电车型价格会贵5-10万左右。
-        </div>
 
-        <h3>3.2 选动力组合：4种，根据“用车习惯”选</h3>
-        <p>沃尔沃XC60有4种动力，不用看参数，看“你怎么开”：</p>
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>动力类型</th>
-                    <th>用什么燃料</th>
-                    <th>能跑多少</th>
-                    <th>适合谁</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><strong>B5（轻混）</strong></td>
-                    <td>纯汽油</td>
-                    <td>一箱油约500公里</td>
-                    <td>不想麻烦、没有充电条件的人（90%的人都适合）</td>
-                </tr>
-                <tr>
-                    <td><strong>B6（轻混）</strong></td>
-                    <td>纯汽油</td>
-                    <td>一箱油约480公里</td>
-                    <td>想要“动力强一点”（比如经常开高速超车）的人</td>
-                </tr>
-                <tr>
-                    <td><strong>Recharge T8（插混）</strong></td>
-                    <td>汽油+插电充电</td>
-                    <td>纯电跑41公里，加汽油后总续航约500公里</td>
-                    <td>每天通勤不超过40公里、有固定充电位（家/公司）的人（能省不少油钱）</td>
-                </tr>
-                <tr>
-                    <td><strong>Recharge EV（纯电）</strong></td>
-                    <td>纯电充电</td>
-                    <td>满电跑约280公里</td>
-                    <td>有固定充电位、几乎不跑长途的人</td>
-                </tr>
-            </tbody>
-        </table>
-        <div class="tip">
-            💡 <strong>小贴士</strong>：第一次买车选B5就够了，简单省心；如果有充电条件且每天通勤短，可以考虑插混（T8）。
-        </div>
-
-        <h2>4. 安全配置：哪些必须要？</h2>
-        <p>沃尔沃的安全是核心卖点，这些配置<strong>必须要有</strong>：</p>
+        <h4>3. 选什么动力？</h4>
+        <p>根据“你怎么开”选择：</p>
         <ul>
-            <li>✅ <strong>City Safety（城市安全系统）</strong>：能自动刹车（比如遇到突然窜出来的行人/自行车）</li>
-            <li>✅ <strong>Lane Keep Assist（车道保持辅助）</strong>：能帮你把车保持在车道里（防止走神压线）</li>
-            <li>✅ <strong>Airbag（气囊）</strong>：至少6个（前排、侧方、头部气帘）</li>
-        </ul>
-        <p><strong>可选但值得加的</strong>：</p>
-        <ul>
-            <li>🎯 <strong>360°全景影像</strong>：新手停车、过窄路时特别有用</li>
-            <li>🎯 <strong>Pilot Assist（领航辅助）</strong>：跑高速时能自动跟车、保持车道（解放右脚，长途更轻松）</li>
+            <li>✅ <strong>B5（轻混）</strong>：纯汽油，适合90%的人</li>
+            <li>✅ <strong>B6（轻混）</strong>：动力更强，适合经常开高速的人</li>
+            <li>✅ <strong>Recharge T8（插混）</strong>：汽油+电动，适合有充电条件的人</li>
+            <li>✅ <strong>Recharge EV（纯电）</strong>：纯电动，适合几乎不跑长途的人</li>
         </ul>
 
-        <h2>5. 绝对要避免的5个坑</h2>
+        <h3>通用购车技巧</h3>
+        <p>无论买什么车，这些技巧都能帮到你：</p>
         <ol>
-            <li><strong>不要买“没用的配置”</strong>：比如“座椅按摩”（XC60的按摩力度很轻，几乎没感觉）、“矩阵大灯”（城市里根本用不上）</li>
-            <li><strong>不要忽略“充电条件”</strong>：如果选插混/纯电，一定要确认家里/公司有固定充电位（不然每次去公共充电桩会很麻烦）</li>
-            <li><strong>不要跳过“真实测试”</strong>：一定要去试驾！重点试试：
-                <ul>
-                    <li>能不能轻松倒进狭窄的车位？</li>
-                    <li>过减速带时是不是太颠？</li>
-                    <li>方向盘会不会太沉？（女生要特别注意）</li>
-                </ul>
-            </li>
-            <li><strong>不要只看“MSRP（厂商指导价）”</strong>：实际买的时候，销售会给你报“落地价”（包含税、保险、上牌费），一定要问清楚“落地价多少”</li>
-            <li><strong>不要忘了“售后保障”</strong>：沃尔沃默认提供<strong>4年/5万公里的整车免费保修</strong> + <strong>终身免费道路救援</strong> + <strong>首保免费</strong>，一定要和销售确认清楚具体条款</li>
+            <li><strong>不要买“没用的配置”</strong>：比如“座椅按摩”、“矩阵大灯”等</li>
+            <li><strong>不要跳过“真实测试”</strong>：一定要去试驾，重点体验舒适性和操控性</li>
+            <li><strong>不要只看“MSRP（厂商指导价）”</strong>：一定要问清楚“落地价”（包含税、保险、上牌费）</li>
+            <li><strong>不要忘了“售后保障”</strong>：确认保修期限和服务内容</li>
         </ol>
 
-        <h2>6. 最后：4步轻松买车流程</h2>
+        <h2 id="market">📈 市场动态</h2>
+        <h3>最新汽车降价信息</h3>
+        <ul>
+            <li>沃尔沃XC60：最高优惠8万元</li>
+            <li>奥迪Q5L：最高优惠7.5万元</li>
+            <li>宝马X3：最高优惠6万元</li>
+        </ul>
+
+        <h3>热门车型排行榜</h3>
         <ol>
-            <li><strong>网上先做功课</strong>：去沃尔沃官网用“Build Your XC60”工具（<a href="https://www.volvocars.com/zh-cn/cars/xc60">https://www.volvocars.com/zh-cn/cars/xc60</a>），自己选配置算价格</li>
-            <li><strong>去4S店试驾</strong>：带身份证，提前1天预约，试驾时间<strong>至少30分钟</strong>，重点试：
-                <ul>
-                    <li>停车：能不能轻松倒进狭窄的车位？</li>
-                    <li>路况：过减速带时是不是太颠？</li>
-                    <li>操作：方向盘会不会太沉？（女生要特别注意）</li>
-                </ul>
-            </li>
-            <li><strong>谈价格</strong>：不要怕砍价！可以参考汽车之家/易车网上的“成交均价”，或者说“别的店给我报了XX价，你能不能更低”</li>
-            <li><strong>签合同提车</strong>：一定要仔细看合同里的“落地价”和“赠送的东西”（比如脚垫、膜、保养），确认没问题再签字</li>
+            <li>SUV：特斯拉Model Y、比亚迪宋PLUS、丰田RAV4</li>
+            <li>轿车：比亚迪秦PLUS、特斯拉Model 3、丰田凯美瑞</li>
+            <li>新能源：比亚迪汉、小鹏P7、理想ONE</li>
         </ol>
 
-        <div class="tip">
-            💡 <strong>最后提醒</strong>：沃尔沃XC60的保值率在豪华SUV里算中等偏上，如果你打算开5年以上，买新车更划算；如果只开2-3年，也可以考虑准新车（开了1-2年、1万公里以内的二手XC60，能省10万左右）
-        </div>
+        <h3>新能源汽车发展趋势</h3>
+        <ul>
+            <li>✅ 纯电动汽车续航里程不断提升</li>
+            <li>✅ 充电基础设施逐渐完善</li>
+            <li>✅ 混动技术越来越成熟</li>
+            <li>✅ 政策支持力度持续加大</li>
+        </ul>
+
+        <h2 id="webapp">🌐 网页应用</h2>
+        <p>我们提供便捷的网页版应用，让您可以在线使用所有功能：</p>
+        <ol>
+            <li>启动本地服务器：<code>python app.py</code></li>
+            <li>在浏览器中访问：<a href="http://localhost:5000">http://localhost:5000</a></li>
+        </ol>
+
+        <h2>📝 快速开始</h2>
+        <ol>
+            <li><strong>克隆项目</strong>：<code>git clone https://github.com/Lau-Daniel/car-buying-guide.git</code></li>
+            <li><strong>安装依赖</strong>：<code>pip install -r requirements.txt</code></li>
+            <li><strong>使用功能</strong>：
+                <ul>
+                    <li>运行智能车型推荐：<code>python src/recommendation/recommend.py</code></li>
+                    <li>使用车型对比工具：<code>python src/comparison/compare.py</code></li>
+                    <li>查看购车技巧文档：<code>cat docs/buying-tips.md</code></li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>🤝 贡献指南</h2>
+        <p>我们欢迎任何形式的贡献！</p>
+        <ul>
+            <li>📝 <strong>完善文档</strong>：购车指南、市场动态等</li>
+            <li>💻 <strong>提交代码</strong>：功能改进、新特性开发等</li>
+            <li>🐞 <strong>报告问题</strong>：使用过程中遇到的bug和问题</li>
+        </ul>
+        <p>详情请参考我们的 <a href="CONTRIBUTING.md">贡献指南</a>。</p>
+
+        <h2>📄 许可证</h2>
+        <p>本项目采用 <a href="LICENSE">MIT 许可证</a>。</p>
+
+        <h2>📞 联系方式</h2>
+        <p>如有任何问题或建议，欢迎联系我们：</p>
+        <ul>
+            <li>📧 项目地址：<a href="https://github.com/Lau-Daniel/car-buying-guide">https://github.com/Lau-Daniel/car-buying-guide</a></li>
+            <li>🐞 问题反馈：<a href="https://github.com/Lau-Daniel/car-buying-guide/issues">https://github.com/Lau-Daniel/car-buying-guide/issues</a></li>
+            <li>💬 讨论区：<a href="https://github.com/Lau-Daniel/car-buying-guide/discussions">https://github.com/Lau-Daniel/car-buying-guide/discussions</a></li>
+        </ul>
 
         <hr>
-        <p style="color: #666; font-size: 0.95rem;">如果还有其他问题，欢迎随时问我！我会继续用最直白的语言给你解释~</p>
+        <p style="color: #666; font-size: 0.95rem;">© 2025 Car Buying Guide. 保留所有权利。</p>
     </div>
 
     <!-- Bootstrap JS (optional, but useful for interactivity) -->
